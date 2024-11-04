@@ -1,12 +1,7 @@
-import os
-import launchFileInit
-import globals as gb
-from controller import ControllerInstance
+import graphics
+from accountManager import AccountManager
 
-
-controller = ControllerInstance()
-
-os.system("cls")
-
-while not gb.DOEXIT:
-	controller.update()
+if __name__ == "__main__":
+    AccountManager()
+    app = graphics.Graphics()
+    app.mainloop()
